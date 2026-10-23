@@ -3,8 +3,13 @@ import "./globals.css";
 import ChatWidget from "@/components/AIChat/ChatWidget";
 
 export const metadata: Metadata = {
-  title: "Maithreyan | Student Developer",
-  description: "Portfolio of Maithreyan, an AI & Robotics enthusiast",
+  title: "Maithreyan | Young Developer | AI & Robotics Enthusiast",
+  description: "I build software, explore artificial intelligence, experiment with robotics, and turn ideas into practical prototypes. Based in India.",
+  openGraph: {
+    title: "Maithreyan | AI & Robotics Enthusiast",
+    description: "Exploring the intersection of AI, robotics, and embedded systems.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({

@@ -1,39 +1,59 @@
 @import "tailwindcss";
 
+@theme {
+  --color-background: #0B0E0D;
+  --color-surface: #131816;
+  --color-text-primary: #F4F5F0;
+  --color-text-muted: #9BA49E;
+  --color-accent: #B8F56A;
+  --color-border: #29302B;
+
+  --font-display: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", "Roboto Mono", monospace;
+}
+
 :root {
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 9, 9, 11;
-  --background-end-rgb: 0, 0, 0;
+  --foreground-rgb: 244, 245, 240;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      rgb(var(--background-start-rgb)),
-      rgb(var(--background-end-rgb))
-    );
+  background: #0B0E0D;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Smooth scrolling for the whole page */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom scrollbar for a more premium feel */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 4px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #09090b;
+  background: #0B0E0D;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #27272a;
-  border-radius: 10px;
+  background: #29302B;
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3f3f46;
+  background: #B8F56A;
+}
+
+/* Technical Accents */
+.technical-grid {
+  background-image:
+    linear-gradient(to right, #29302B 1px, transparent 1px),
+    linear-gradient(to bottom, #29302B 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.text-balance {
+  text-wrap: balance;
 }

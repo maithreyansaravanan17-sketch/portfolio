@@ -21,7 +21,7 @@ export default function About() {
           <div className="grid gap-4">
             {siteConfig.about.highlights.map((highlight, idx) => (
               <div key={idx} className="flex items-start gap-3 text-zinc-300">
-                <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-cyan-500 shrink-0" />
+                <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-accent shrink-0" />
                 <p>{highlight}</p>
               </div>
             ))}

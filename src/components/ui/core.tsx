@@ -23,7 +23,7 @@ export const Badge = ({ children, variant = "default", className }: { children: 
   const variants = {
     default: "bg-zinc-800 text-zinc-300 border-zinc-700",
     outline: "bg-transparent text-zinc-400 border-zinc-700",
-    accent: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
+    accent: "bg-accent/10 text-accent border-accent/20",
   };
 
   return (
@@ -39,10 +39,10 @@ export const Badge = ({ children, variant = "default", className }: { children: 
 
 export const Typography = {
   H1: ({ children, className }: { children: React.ReactNode; className?: string }) => (
-    <h1 className={cn("text-4xl md:text-6xl font-bold tracking-tight text-zinc-100", className)}>{children}</h1>
+    <h1 className={cn("text-4xl md:text-6xl font-display font-bold tracking-tighter text-zinc-100", className)}>{children}</h1>
   ),
   H2: ({ children, className }: { children: React.ReactNode; className?: string }) => (
-    <h2 className={cn("text-3xl md:text-4xl font-bold tracking-tight text-zinc-100 mb-4", className)}>{children}</h2>
+    <h2 className={cn("text-3xl md:text-4xl font-display font-bold tracking-tighter text-zinc-100 mb-4", className)}>{children}</h2>
   ),
   P: ({ children, className }: { children: React.ReactNode; className?: string }) => (
     <p className={cn("text-zinc-400 leading-relaxed", className)}>{children}</p>
